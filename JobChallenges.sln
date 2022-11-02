@@ -3,13 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubArraySumTest", "MaxSubArraySum\MaxSubArraySumTest.csproj", "{954987A3-BAEA-4845-AE21-404BC61D98B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubArraySumTest", "MaxSubArraySum\MaxSubArraySumTest.csproj", "{954987A3-BAEA-4845-AE21-404BC61D98B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubArraySumLib", "MaxSubArraySumLib\MaxSubArraySumLib.csproj", "{2F92180E-35C1-4618-A25D-3D38777ECCED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubArraySumLib", "MaxSubArraySumLib\MaxSubArraySumLib.csproj", "{2F92180E-35C1-4618-A25D-3D38777ECCED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokenPoLib", "JokenPoLib\JokenPoLib.csproj", "{F9138ABE-1AA8-494A-8F49-3DAA296C2A80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokenPoLib", "JokenPoLib\JokenPoLib.csproj", "{F9138ABE-1AA8-494A-8F49-3DAA296C2A80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokenPoTest", "JokenPoTest\JokenPoTest.csproj", "{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokenPoTest", "JokenPoTest\JokenPoTest.csproj", "{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JokenPo", "JokenPo", "{C1431488-EDBA-4937-89B5-F958654454F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaxSubArraySum", "MaxSubArraySum", "{F097D270-C817-41AB-AB71-F2363CB3215F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TempConverter", "TempConverter", "{BF393805-A0B1-4C58-BDDC-7D208FF20288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConverterTest", "TempConverterTest\TempConverterTest.csproj", "{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConverterLib", "TempConverterLib\TempConverterLib.csproj", "{1846AA9E-07AB-4814-A767-F5E29CA43CB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,25 @@ Global
 		{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{954987A3-BAEA-4845-AE21-404BC61D98B1} = {F097D270-C817-41AB-AB71-F2363CB3215F}
+		{2F92180E-35C1-4618-A25D-3D38777ECCED} = {F097D270-C817-41AB-AB71-F2363CB3215F}
+		{F9138ABE-1AA8-494A-8F49-3DAA296C2A80} = {C1431488-EDBA-4937-89B5-F958654454F4}
+		{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B} = {C1431488-EDBA-4937-89B5-F958654454F4}
+		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84} = {BF393805-A0B1-4C58-BDDC-7D208FF20288}
+		{1846AA9E-07AB-4814-A767-F5E29CA43CB5} = {BF393805-A0B1-4C58-BDDC-7D208FF20288}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD0D8B95-CF63-4B56-BCA2-3C7F15FDE21C}
