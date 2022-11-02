@@ -2,22 +2,18 @@ namespace MaxSubArraySum
 {
     public class MaxSubArraySumTest
     {
-        [Fact]
-        public void DefaultSumTest()
-        {
-            Assert.Equal(10, MaxSubArraySumLib.MaxSubArraySum.DefaultSum(new int[] {1, 2, 3, 4 }));
-            Assert.Equal(-1, MaxSubArraySumLib.MaxSubArraySum.DefaultSum(new int[] {-1, -2, -3, -4 }));
-            Assert.Equal(3, MaxSubArraySumLib.MaxSubArraySum.DefaultSum(new int[] {-1, -2, 1, 2 }));
-            Assert.Equal(3, MaxSubArraySumLib.MaxSubArraySum.DefaultSum(new int[] {1, 2, -1, -2 }));
-        }
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 4 }, 10)]
+        [InlineData(new int[] { -1, -2, -3, -4 }, -1)]
+        [InlineData(new int[] { -1, -2, 1, 2 }, 3)]
+        [InlineData(new int[] { 1, 2, -1, -2 }, 3)]
+        public void DefaultSumTest(int[] param, int result) => Assert.Equal(result, MaxSubArraySumLib.MaxSubArraySum.DefaultSum(param));
 
-        [Fact]
-        public void KadeneSumTest()
-        {
-            Assert.Equal(10, MaxSubArraySumLib.MaxSubArraySum.KadeneSum(new int[] { 1, 2, 3, 4 }));
-            Assert.Equal(-1, MaxSubArraySumLib.MaxSubArraySum.KadeneSum(new int[] { -1, -2, -3, -4 }));
-            Assert.Equal(3, MaxSubArraySumLib.MaxSubArraySum.KadeneSum(new int[] { -1, -2, 1, 2 }));
-            Assert.Equal(3, MaxSubArraySumLib.MaxSubArraySum.KadeneSum(new int[] { 1, 2, -1, -2 }));
-        }
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 4 }, 10)]
+        [InlineData(new int[] { -1, -2, -3, -4 }, -1)]
+        [InlineData(new int[] { -1, -2, 1, 2 }, 3)]
+        [InlineData(new int[] { 1, 2, -1, -2 }, 3)]
+        public void KadeneSumTest(int[] param, int result) => Assert.Equal(result, MaxSubArraySumLib.MaxSubArraySum.KadeneSum(param));
     }
 }
