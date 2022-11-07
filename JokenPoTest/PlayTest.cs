@@ -4,6 +4,13 @@ namespace JokenPoTest
 {
     public class PlayTest
     {
+        public Play Play { get; set; }
+
+        public PlayTest()
+        {
+            Play = new Play();
+        }
+
         [Fact]
         public void Tie1() => Assert.Equal(PlayResult.Tie, Play.ToPlay(PlayType.Scissors, PlayType.Scissors));
 

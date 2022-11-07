@@ -14,13 +14,13 @@
         Tie
     }
 
-    public static class Play
+    public class Play
     {
 
-        private static PlayType Player1 { get; set; }
-        private static PlayType Player2 { get; set; }
+        private PlayType Player1 { get; set; }
+        private PlayType Player2 { get; set; }
 
-        public static PlayResult ToPlay(PlayType player1, PlayType player2)
+        public PlayResult ToPlay(PlayType player1, PlayType player2)
         {
             Player1 = player1;
             Player2 = player2;

@@ -1,8 +1,13 @@
-﻿namespace MaxSubArraySumLib
+﻿using BenchmarkDotNet.Attributes;
+
+namespace MaxSubArraySumLib
 {
-    public static class MaxSubArraySum
+
+    [RankColumn]
+    [MemoryDiagnoser]
+    public class MaxSubArraySum
     {
-        public static int DefaultSum(int[] param)
+        public int DefaultSum(int[] param)
         {
             Validation(param);
 
@@ -22,8 +27,8 @@
 
             return maxSum;
         }
-                
-        public static int KadeneSum(int[] param)
+
+        public int KadeneSum(int[] param)
         {
             Validation(param);
 
@@ -38,7 +43,7 @@
             return maxSum;
         }
 
-        private static void Validation(int[] param)
+        private void Validation(int[] param)
         {
             if (param.Length < 3)
                 throw new Exception("< 3");
@@ -50,5 +55,19 @@
                 if (item < -10000 || item > 10000)
                     throw new Exception("-10000<x>+10000");
         }
+
+        #region Benchmark
+        [Benchmark]
+        public int DefaultSum()
+        {
+            return DefaultSum(new int[] { 1, 2, 3 });
+        }
+
+        [Benchmark]
+        public int KadeneSum()
+        {
+            return KadeneSum(new int[] { 1, 2, 3 });
+        }
+        #endregion
     }
 }

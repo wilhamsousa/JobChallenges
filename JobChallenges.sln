@@ -17,9 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaxSubArraySum", "MaxSubArr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TempConverter", "TempConverter", "{BF393805-A0B1-4C58-BDDC-7D208FF20288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConverterTest", "TempConverterTest\TempConverterTest.csproj", "{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TempConverterTest", "TempConverterTest\TempConverterTest.csproj", "{FEE44C7E-D17A-4087-B7CA-C9ED78570F84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConverterLib", "TempConverterLib\TempConverterLib.csproj", "{1846AA9E-07AB-4814-A767-F5E29CA43CB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TempConverterLib", "TempConverterLib\TempConverterLib.csproj", "{1846AA9E-07AB-4814-A767-F5E29CA43CB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkConsole", "BenchmarkConsole\BenchmarkConsole.csproj", "{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1846AA9E-07AB-4814-A767-F5E29CA43CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
