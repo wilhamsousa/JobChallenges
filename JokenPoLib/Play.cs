@@ -14,36 +14,29 @@
         Tie
     }
 
-    public class Play
+    public static class Play
     {
-
-        private PlayType Player1 { get; set; }
-        private PlayType Player2 { get; set; }
-
-        public PlayResult ToPlay(PlayType player1, PlayType player2)
+        public static PlayResult ToPlay(PlayType player1, PlayType player2)
         {
-            Player1 = player1;
-            Player2 = player2;
-
-            if (Player1 == Player2)
+            if (player1 == player2)
                 return PlayResult.Tie;
 
-            if (Player1 == PlayType.Stone && Player2 == PlayType.Scissors)
+            if (player1 == PlayType.Stone && player2 == PlayType.Scissors)
                 return PlayResult.Player1;
 
-            if (Player1 == PlayType.Paper && Player2 == PlayType.Stone)
+            if (player1 == PlayType.Paper && player2 == PlayType.Stone)
                 return PlayResult.Player1;
 
-            if (Player1 == PlayType.Scissors && Player2 == PlayType.Paper)
+            if (player1 == PlayType.Scissors && player2 == PlayType.Paper)
                 return PlayResult.Player1;
 
-            if (Player2 == PlayType.Stone && Player1 == PlayType.Scissors)
+            if (player2 == PlayType.Stone && player1 == PlayType.Scissors)
                 return PlayResult.Player2;
 
-            if (Player2 == PlayType.Paper && Player1 == PlayType.Stone)
+            if (player2 == PlayType.Paper && player1 == PlayType.Stone)
                 return PlayResult.Player2;
 
-            if (Player2 == PlayType.Scissors && Player1 == PlayType.Paper)
+            if (player2 == PlayType.Scissors && player1 == PlayType.Paper)
                 return PlayResult.Player2;
 
             return PlayResult.Tie;

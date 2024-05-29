@@ -4,11 +4,8 @@ namespace JokenPoTest
 {
     public class PlayTest
     {
-        public Play Play { get; set; }
-
         public PlayTest()
         {
-            Play = new Play();
         }
 
         [Fact]
