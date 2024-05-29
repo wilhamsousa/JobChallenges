@@ -21,7 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TempConverterTest", "TempCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TempConverterLib", "TempConverterLib\TempConverterLib.csproj", "{1846AA9E-07AB-4814-A767-F5E29CA43CB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkConsole", "BenchmarkConsole\BenchmarkConsole.csproj", "{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkConsole", "BenchmarkConsole\BenchmarkConsole.csproj", "{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IsEqualWithInvert", "IsEqualWithInvert", "{B12C1BEB-6344-4468-92CD-D24677B20727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsEqualWithInvertLib", "IsEqualWithInvertLib\IsEqualWithInvertLib.csproj", "{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsEqualWithInvertTest", "IsEqualWithInvertTest\IsEqualWithInvertTest.csproj", "{9667BAB7-161D-45C2-901F-194DBF6D042A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,14 @@ Global
 		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C2DA208-3D7B-4886-9BA7-E28FE8A2E783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9667BAB7-161D-45C2-901F-194DBF6D042A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9667BAB7-161D-45C2-901F-194DBF6D042A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9667BAB7-161D-45C2-901F-194DBF6D042A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9667BAB7-161D-45C2-901F-194DBF6D042A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +82,8 @@ Global
 		{3FD52944-8BC7-46D1-A05C-0F7AF4C9542B} = {C1431488-EDBA-4937-89B5-F958654454F4}
 		{FEE44C7E-D17A-4087-B7CA-C9ED78570F84} = {BF393805-A0B1-4C58-BDDC-7D208FF20288}
 		{1846AA9E-07AB-4814-A767-F5E29CA43CB5} = {BF393805-A0B1-4C58-BDDC-7D208FF20288}
+		{72BBDAD0-85F2-44FE-A8E9-AA29DB7D3FA9} = {B12C1BEB-6344-4468-92CD-D24677B20727}
+		{9667BAB7-161D-45C2-901F-194DBF6D042A} = {B12C1BEB-6344-4468-92CD-D24677B20727}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD0D8B95-CF63-4B56-BCA2-3C7F15FDE21C}
