@@ -2,7 +2,10 @@
 
 namespace MaxSubArraySumLib
 {
-
+    /// <summary>
+    /// Array max consecutive sum
+    /// Calculation of the subarray that results in the largest sum between the elements
+    /// </summary>
     [RankColumn]
     [MemoryDiagnoser]
     public class MaxSubArraySum
@@ -36,8 +39,8 @@ namespace MaxSubArraySumLib
             var maxSum = param[0];
             for (int i = 1; i < param.Length; i++)
             {
-                sum = Math.Max(param[i], sum + param[i]);
-                maxSum = Math.Max(maxSum, sum);
+                sum = param[i] > sum + param[i] ? param[i] : sum + param[i];
+                maxSum = maxSum > sum ? maxSum : sum;
             }
 
             return maxSum;

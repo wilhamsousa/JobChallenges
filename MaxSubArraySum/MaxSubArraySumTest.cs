@@ -38,6 +38,7 @@ namespace MaxSubArraySumTest
         [InlineData(new int[] { -1, -2, -3, -4 }, -1)]
         [InlineData(new int[] { -1, -2, 1, 2 }, 3)]
         [InlineData(new int[] { 1, 2, -1, -2 }, 3)]
+        [InlineData(new int[] { 1, 2, -1, -2, 1, 2, -1, -2, 1, 2, -1, -2, 1, 2, -1, -2 }, 3)]
         public void DefaultSumTest(int[] param, int result) => Assert.Equal(result, MaxSubArraySum.DefaultSum(param));
 
         [Theory]
@@ -45,6 +46,7 @@ namespace MaxSubArraySumTest
         [InlineData(new int[] { -1, -2, -3, -4 }, -1)]
         [InlineData(new int[] { -1, -2, 1, 2 }, 3)]
         [InlineData(new int[] { 1, 2, -1, -2 }, 3)]
+        [InlineData(new int[] { 1, 2, -1, -2, 1, 2, -1, -2, 1, 2, -1, -2, 1, 2, -1, -2 }, 3)]
         public void KadeneSumTest(int[] param, int result) => Assert.Equal(result, MaxSubArraySum.KadeneSum(param));
     }
 }
