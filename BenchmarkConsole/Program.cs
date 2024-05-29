@@ -2,5 +2,4 @@
 using BenchmarkDotNet.Running;
 using MaxSubArraySumLib;
 
-BenchmarkRunner.Run<MaxSubArraySum>();
 var summary = BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run();

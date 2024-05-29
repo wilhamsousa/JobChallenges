@@ -8,12 +8,9 @@ namespace MaxSubArraySumTest
 {
     public class MaxSubArraySumTest
     {
-        public MaxSubArraySum MaxSubArraySum { get; set; }
-
         public MaxSubArraySumTest(ITestOutputHelper output)
         {
             this.output = output;
-            MaxSubArraySum = new MaxSubArraySum();
         }
 
         private readonly ITestOutputHelper output;

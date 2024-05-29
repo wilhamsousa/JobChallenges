@@ -8,9 +8,9 @@ namespace MaxSubArraySumLib
     /// </summary>
     [RankColumn]
     [MemoryDiagnoser]
-    public class MaxSubArraySum
+    public static class MaxSubArraySum
     {
-        public int DefaultSum(int[] param)
+        public static int DefaultSum(int[] param)
         {
             Validation(param);
 
@@ -31,7 +31,7 @@ namespace MaxSubArraySumLib
             return maxSum;
         }
 
-        public int KadeneSum(int[] param)
+        public static int KadeneSum(int[] param)
         {
             Validation(param);
 
@@ -46,7 +46,7 @@ namespace MaxSubArraySumLib
             return maxSum;
         }
 
-        private void Validation(int[] param)
+        private static void Validation(int[] param)
         {
             if (param.Length < 3)
                 throw new Exception("< 3");
@@ -61,13 +61,13 @@ namespace MaxSubArraySumLib
 
         #region Benchmark
         [Benchmark]
-        public int DefaultSum()
+        public static int DefaultSum()
         {
             return DefaultSum(new int[] { 1, 2, 3 });
         }
 
         [Benchmark]
-        public int KadeneSum()
+        public static int KadeneSum()
         {
             return KadeneSum(new int[] { 1, 2, 3 });
         }

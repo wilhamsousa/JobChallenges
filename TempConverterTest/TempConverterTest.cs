@@ -4,11 +4,8 @@ namespace TempConverterTest
 {
     public class TempConverterTest
     {
-        public TempConverter TempConverter { get; set; }
-
         public TempConverterTest()
         {
-            TempConverter = new TempConverter();
         }
 
         [Fact]
