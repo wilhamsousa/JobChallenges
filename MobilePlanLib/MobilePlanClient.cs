@@ -4,6 +4,9 @@ using MobilePlanLib.Model.Interface;
 
 namespace MobilePlanLib
 {
+    /// <summary>
+    /// Factory with sub factories, where the factory build a implementation based with parameter
+    /// </summary>
     public class MobilePlanClient
     {
         private readonly IMobilePlanFactory _mobilePlanFactory;
