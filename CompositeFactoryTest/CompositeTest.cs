@@ -3,6 +3,10 @@ using Xunit.Abstractions;
 
 namespace CompositeFactoryTest
 {
+    /// <summary>
+    /// Component and components list with same interface
+    /// Lista encadeada (Linked list) / Object tree 
+    /// </summary>
     public class CompositeTest
     {
         private readonly ITestOutputHelper _output;

@@ -3,6 +3,9 @@ using MobilePlanLib.Model.Enum;
 
 namespace MobilePlanTest
 {
+    /// <summary>
+    /// Factory with sub factories, where the factory build a implementation based with parameter
+    /// </summary>
     public class MobilePlanTest
     {
         [Fact]
