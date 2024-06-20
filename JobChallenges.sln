@@ -43,11 +43,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilePlanLib", "MobilePlan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilePlanTest", "MobilePlanTest\MobilePlanTest.csproj", "{756214EB-253F-43D6-9B6F-53F754BDC016}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeFactory", "CompositeFactory", "{85908F5F-89A8-4A5B-A6A8-9A67A691660E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Composite", "Composite", "{85908F5F-89A8-4A5B-A6A8-9A67A691660E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeFactoryLib", "CompositeFactoryLib\CompositeFactoryLib.csproj", "{69DDB0F1-E006-4656-AAB2-EFBAA4D4874B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeLib", "CompositeFactoryLib\CompositeLib.csproj", "{69DDB0F1-E006-4656-AAB2-EFBAA4D4874B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeFactoryTest", "CompositeFactoryTest\CompositeFactoryTest.csproj", "{B8387A61-80A3-4D4B-A1B7-4A614B985664}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeTest", "CompositeFactoryTest\CompositeTest.csproj", "{B8387A61-80A3-4D4B-A1B7-4A614B985664}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{9FF7E85B-142B-4028-97A7-74C0466A20DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -136,6 +138,7 @@ Global
 		{85908F5F-89A8-4A5B-A6A8-9A67A691660E} = {D93DC840-1823-4AE1-A261-F310AC388F3A}
 		{69DDB0F1-E006-4656-AAB2-EFBAA4D4874B} = {85908F5F-89A8-4A5B-A6A8-9A67A691660E}
 		{B8387A61-80A3-4D4B-A1B7-4A614B985664} = {85908F5F-89A8-4A5B-A6A8-9A67A691660E}
+		{9FF7E85B-142B-4028-97A7-74C0466A20DE} = {D93DC840-1823-4AE1-A261-F310AC388F3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD0D8B95-CF63-4B56-BCA2-3C7F15FDE21C}

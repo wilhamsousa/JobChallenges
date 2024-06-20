@@ -3,11 +3,11 @@ using Xunit.Abstractions;
 
 namespace CompositeFactoryTest
 {
-    public class CompositeFactoryTest
+    public class CompositeTest
     {
         private readonly ITestOutputHelper _output;
 
-        public CompositeFactoryTest(ITestOutputHelper output)
+        public CompositeTest(ITestOutputHelper output)
         {
             _output = output;
         }

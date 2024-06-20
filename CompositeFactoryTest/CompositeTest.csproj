@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CompositeFactoryLib\CompositeFactoryLib.csproj" />
+    <ProjectReference Include="..\CompositeFactoryLib\CompositeLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
